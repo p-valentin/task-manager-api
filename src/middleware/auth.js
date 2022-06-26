@@ -1,5 +1,6 @@
- const jwk = require('jsonwebtoken');
- const User = require('../models/user') 
+ const jwk = require('jsonwebtoken')
+ const User = require('../models/user')
+ require('dotenv').config({path:__dirname+'/.env'})
 
 const auth = async (req, res, next) => {
     try {
